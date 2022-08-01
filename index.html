@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Snake by @kirpichev228</title>
+</head>
+<body>
+    <div class="warning">
+        Attention! This application has 
+        problems playing the theme music. 
+        So if you catch a little 
+        earrape, please excuse me!
+    </div>
+    <div class="root">
+        <h1>
+            <span style="color: red;">S</span>
+            <span style="color: orange;">N</span>
+            <span style="color: yellow;">A</span>
+            <span style="color: green;">K</span>
+            <span style="color: cyan;">E</span>
+            <!-- <span style="color: purple;">S</span> -->
+        </h1>
+    </div>
+    <div class="modal">
+        <p class="lose-name">
+            You Lose!
+        </p>
+        <span class="lose-cls">
+            X
+        </span>
+        <div class="difficulty">
+            <h4 class="difficulty-level">
+                Difficulty level
+            </h4>
+            <div class="difficulty-selectors">
+                <span class="difficulty-easy">
+                    Easy
+                </span>
+                <span class="difficulty-normal active">
+                    Normal
+                </span>
+                <span class="difficulty-hard">
+                    Hard
+                </span>
+            </div>
+        </div>
+        <button class="lose-try">
+            Try again
+        </button>
+    </div>
+    <div class="game-window">
+        <canvas id="game-field" width="608" height="607"></canvas>
+        <div class="game-info">
+            <a href="https://github.com/kirpichev228" class="gh-link-main">
+                @kirpichev228 
+            </a>
+            <div class="game-score">
+                <p class="score-head">Last 10 games score</p>
+                <ol class="score-list">
+                    <li class="list-element"></li>
+                    <li class="list-element"></li>
+                    <li class="list-element"></li>
+                    <li class="list-element"></li>
+                    <li class="list-element"></li>
+                    <li class="list-element"></li>
+                    <li class="list-element"></li>
+                    <li class="list-element"></li>
+                    <li class="list-element"></li>
+                    <li class="list-element"></li>
+                </ol>
+            </div>
+            
+            <div class="music">
+                <h3 class="music-name">
+                    Music
+                </h3>
+                <div class="onoff">
+                    <span class="music-on tumb">
+                        on
+                    </span>
+                    <span class="music-off tumb">
+                        off
+                    </span>
+                </div>
+            </div>
+            <p class="hint">Win at 30 points</p>
+            <a href="https://www.youtube.com/watch?v=TM14q3UHYSg&list=PLzjkiYUjXuevVG0fTOX4GCTzbU0ooHQ-O&index=8&ab_channel=HertzDevil" class="songname">
+                Song name: Cirno Fortress Stage 2
+            </a>
+            
+        </div>
+    </div>
+    <div class="controls">
+        <h4 class="controls-name">
+            Controls
+        </h4>
+        <div class="controls-arrows">
+            <div class="arrow-up">
+                ->
+            </div>
+            <div class="arrows-another">
+                <div class="arrow-"><-</div>
+                <div class="arrow-down">-></div>
+                <div class="arrow-">-></div>
+            </div>
+        </div>
+    </div>
+    <!-- <canvas id="game-field" width="608" height="607"></canvas> -->
+    <audio src="audio/main.m4a" class="audio" autoplay="autoplay"></audio>
+
+    <footer class="footer">
+        <span>2022</span>
+        <a href="https://github.com/kirpichev228" class="footer-gh-link">
+            @kirpichev228
+        </a>
+        <a href="https://rs.school/js-stage0/" class="logo">
+            <div class="logo-js">
+                js
+            </div>
+            <span class="logo-rs">
+                RS
+            </span>
+            <span>School</span>
+        </a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

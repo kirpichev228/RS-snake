@@ -1,0 +1,284 @@
+body {
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 3rem;
+}
+
+a {
+    margin-top: 20px;
+    text-decoration: none;
+    color: aliceblue;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+}
+
+.hint {
+    font-size: 10px;
+}
+
+.warning {
+    width: 200px;
+    height: 100px;
+    color: aliceblue;
+    font-size: 11px;
+    line-height: 15px;
+    border: 5px solid white;
+    padding: 10px;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+
+a:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+.gh-link-main {
+    font-size: 20px;
+    color: black;
+    margin: 20px 0;
+}
+
+.game-window {
+    display: flex;
+    height: 607px;
+    background-color: gray;
+}
+
+canvas {
+    display: block;
+}
+
+.game-info {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.root {
+    position: relative;
+}
+
+.root.active {
+    top: -10px;
+}
+
+.game-score {
+    width: 300px;
+    height: 350px;
+    border: 3px solid black;
+    box-shadow: inset 0 0 5px black;
+    text-align: center;
+}
+
+.score-head {
+    font-size: 14px;
+}
+
+.score-list {
+    padding-left: 80px;
+    line-height: 30px;
+}
+
+.difficulty {
+    height: 60px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.difficulty-level {
+    font-size: 15px;
+    margin: 0;
+}
+
+.difficulty-selectors {
+    font-size: 12px;
+}
+
+.difficulty-selectors > span:hover {
+    color: gray;
+    cursor: pointer;
+}
+
+.difficulty-selectors > span.active {
+    color: crimson;
+}
+
+.modal {
+    position: absolute;
+    margin: 15%;
+    width: 300px;
+    height: 230px;
+    border: 5px black solid;
+    background-color: aliceblue;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}   
+
+.modal.active {
+    display: flex;
+}
+
+.lose-cls {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.lose-cls:hover {
+    color: grey;
+    cursor: pointer;
+}
+
+.lose-try {
+    height: 50px;
+    width: 150px;
+    background-color: aliceblue;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.lose-try:hover {
+    background-color: black;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.music {
+    width: 300px;
+    height: 55px;
+    border: 4px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.onoff {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.music-name {
+    margin: 0;
+}
+
+.songname {
+    margin: 0;
+}
+
+.tumb:hover {
+    cursor: pointer;
+    color: aliceblue;
+}
+
+.controls {
+    color: aliceblue;
+    position: absolute;
+    height: 170px;
+    width: 220px;
+    left: -5px;
+    top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid aliceblue;
+}
+
+.arrows-another {
+    display: flex;
+}
+
+.controls-arrows {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.arrows-another > div {
+    height: 40px;
+    width: 40px;
+    border: 2px solid aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+}
+
+.arrow-up {
+    height: 40px;
+    width: 40px;
+    border: 2px solid aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-90deg);
+    margin-bottom: 3px;
+}
+
+.arrow-down {
+    transform: rotate(90deg);
+}
+
+.footer {
+    height: 90px;
+    width: 100vw;
+    border-top: 5px solid white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: aliceblue;
+}
+
+.footer-gh-link {
+    font-size: 15px;
+    margin: 0;
+}
+
+.logo {
+    width: 100px;
+    height: 90px;
+    margin: 0;
+    font-size: 18px;
+}
+
+.logo:hover{
+    color: blue;
+    cursor: pointer;
+}
+
+.logo-rs {
+    font-size: 30px;
+}
+
+.logo-js {
+    position: relative;
+    right: -58px;
+    top: 18px;
+    transform: rotate(-45deg);
+    border: 2px solid white;
+    border-radius: 61%;
+    width: 42px;
+    height: 25px;
+    text-align: center;
+}
+
+.logo:hover > .logo-js {
+    border-color: blue;
+}
